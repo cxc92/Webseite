@@ -1,0 +1,99 @@
+#check{
+    display: none;
+    /* background-color: grey; */
+}
+
+header{
+    background-color: grey;
+    position: relative;
+    z-index: 10;
+}
+
+a{
+    font: bold;
+    font-size: 20px;
+}
+
+.top-nav{
+    a{
+        padding-left: 5rem;
+        font-size: 1.5rem;
+        text-decoration: none;
+        /* background-color: grey; */
+        color: inherit;
+        /* border: solid; */
+        display: block;
+        height: 3rem;
+        line-height: 3rem;
+    }
+}
+
+.aktiv{
+    color: crimson;
+}
+
+a:hover{
+    color: crimson;
+}
+
+
+/* Rablet - Office Screen */
+@media screen and (min-width: 70rem){
+    .nav-wrapper{
+        display: flex;
+        padding: 1rem;
+        justify-content: space-between;
+        a{
+            padding: 0.5rem;
+        }
+    }
+    .switch-label{
+        display: none;
+    }
+
+    .colum{
+        display: flex;
+        text-align: justify;
+        gap: 2rem;
+    }
+}
+
+
+/* Smartphone */
+@media screen and (max-width: 70rem){
+    .wrapper{
+        width: 100%;
+        /* padding-left: 1rem;
+        padding-right: 1rem; */
+        /* border: solid red 20px */
+    }
+
+    .nav-wrapper{
+        display: none;
+    }
+    .switch-label{
+        /* background-color: aquamarine; */
+        /* border:solid; */
+        display: block;
+        height: 5rem;
+        font-size: 3rem;
+        line-height: 5rem;
+        background-image: url(img/hamburger.svg);
+        background-repeat: no-repeat;
+        background-size: 2rem;
+        background-position: 85% 50%;
+        cursor:pointer;
+        user-select: none;
+        padding-left: 5rem;
+    }
+}
+
+
+#check:checked+.nav-wrapper{
+    
+    display: block;
+    position: absolute;
+    background-color: gray;
+    width: 100%
+    /* padding-left: 1rem; */
+}

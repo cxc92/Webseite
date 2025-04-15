@@ -1,0 +1,91 @@
+.form-holder {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    width: 100%;
+    max-width: 600px; 
+    background-color: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-sizing: border-box;
+}
+
+.input-holder {
+    /* background-color: black; */
+    margin-bottom: 1rem;
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 0.5rem; 
+}
+
+.required{
+    color: red;
+}
+
+.input-holder label {
+    /* background-color: black; */
+    width: 100%; 
+    margin-bottom: 0.5rem;
+}
+
+.input-holder input,
+.input-holder textarea {
+    background-color: rgba(48, 16, 88, 0.315);
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.text-area {
+    width: 100%; 
+    height: 10rem; 
+    /* padding: 3rem; */
+    background-color: rgba(229, 26, 236, 0.1);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    
+    box-sizing: border-box;
+}
+
+.button-holder {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem; /
+}
+
+.button-holder input {
+    flex: 1; 
+    max-width: 48%; 
+    padding: 0.75rem;
+    background-color: rgba(137, 43, 226, 0.479);
+    border: none;
+    color: rgb(3, 0, 0);
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.button-holder input:hover {
+    background-color: rgba(137, 43, 226, 0.7);
+}
+
+
+@media (max-width: 480px) {
+    .form-holder {
+        padding: 0.5rem;
+    }
+
+    .button-holder input {
+        max-width: 100%; 
+    }
+}
+
+h1{
+    text-align: center;
+    justify-content: center;
+    margin: center;
+}

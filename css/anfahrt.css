@@ -1,0 +1,24 @@
+body{
+    margin: 0;
+    height: 100%;
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* display: flex; */
+
+}
+
+.google{
+    padding-top: 3rem;
+    margin: center;
+    /* border: 1px solid; */
+    /* border-radius: 2px; */
+    display: flex;
+    justify-content: center;
+}
+.google iframe{
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    padding: 2rem;
+}

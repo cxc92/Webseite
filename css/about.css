@@ -1,0 +1,25 @@
+html{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+main{
+    margin: 0;
+    
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+}
+
+.aboutseite{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.aboutseite img{
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
